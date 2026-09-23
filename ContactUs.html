@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Contact Us - Bobadilla Services
+        </title>
+        <link rel="stylesheet" href="stylesContact.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar" id="navbar">
+                <a href="Main.html"><img src = "Photos/logo.png" alt ="Bobadilla Services Logo" width = 250vw height= "120"> </a>
+            <!--    <a href="AboutUs.html"> About Us</a> -->
+                <a href="OurWork.html">Our Work </a> 
+                <a href="ContactUs.html"> Contact Us</a>
+            </div>
+        </header>
+        <main> 
+        <h1>
+            Contact Us for Service or Questions 
+        </h1>
+        
+        <div class="container">
+            <form action="ContactUs.php" method="POST">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          
+              <label for="City">Location (Chicagoland Area)</label>
+              <input type="text" id="City" name="cityname" placeholder="City.." required>
+          
+              <label for="subject">What service are you interested in? Questions?</label required>
+              <textarea id="subject" name="subject" placeholder="Please describe the service you need in detail.." style="height:200px"></textarea>
+                
+              <label for="tel">Phone number: </label>
+              <input type="tel" id="phone" name="tel" placeholder="123-456-7890" required>
+              <br />
+              
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+        </main>
+    </body>
+</html>
